@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300i,400,400i,500,500i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url(../css/slider.css);
+@import url(../css/social__links.css);
+body {
+  background: #f3f1f2;
+  color: #96a6a7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+a {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #96a6a7;
+}
+
+section#header, section#header > .navigation, section#search form, section#content > .filters > .wrap, section#content > .filters > .wrap > .recommended, section#content > .filters > .wrap > .categories, section#content > .wrap > .posts, section#content > .wrap > .posts > .post > .hover > .more, section#contacts > .wrap .pair2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0 15px;
+  background-color: #1baf5d;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  left: calc(50% - 30.5px);
+  bottom: -25px;
+}
+
+.border {
+  width: 100%;
+}
+
+.green > .hover > a > .border {
+  border-bottom: solid 3px #1baf5d;
+}
+
+.green > .hover > a::before {
+  content: '';
+  background: rgba(27, 175, 93, 0.7);
+  border-radius: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.green > .rating > h4 {
+  color: #1baf5d;
+}
+
+.green > .big-hover > a > .border {
+  border-bottom: solid 3px #1baf5d;
+}
+
+.yellow > .hover > a > .border {
+  border-bottom: solid 3px #f19e1f;
+}
+
+.yellow > .hover > a::before {
+  content: '';
+  background: rgba(241, 158, 31, 0.7);
+  border-radius: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.yellow > .rating > h4 {
+  color: #f19e1f;
+}
+
+.yellow > .big-hover > a > .border {
+  border-bottom: solid 3px #f19e1f;
+}
+
+.purple > .hover > a > .border {
+  border-bottom: solid 3px #88499c;
+}
+
+.purple > .hover > a::before {
+  content: '';
+  background: rgba(136, 73, 156, 0.7);
+  border-radius: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.purple > .rating > h4 {
+  color: #88499c;
+}
+
+.purple > .big-hover > a > .border {
+  border-bottom: solid 3px #88499c;
+}
+
+.hover:hover > a::before {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.b-icon {
+  z-index: 3;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+}
+
+.center {
+  width: 100%;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  box-shadow: inset 0 -30px 30px -15px black;
+}
+
+.center > h2 {
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+.center > span {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+section#header {
+  width: 100%;
+  align-items: center;
+  background-color: white;
+}
+
+section#header .logo {
+  margin: 10px 5% 10px 12%;
+}
+
+section#header > .navigation {
+  margin: 0 3% 0 5%;
+  overflow: hidden;
+}
+
+section#header > .navigation li {
+  padding-right: 25px;
+}
+
+section#header > .navigation li a {
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+section#header > .navigation li a:hover {
+  color: #343d3d;
+}
+
+section#header > .navigation li:last-child {
+  padding-right: 0;
+}
+
+section#header .search {
+  padding: 25px;
+  background-color: #e2dee0;
+  font-size: 25px;
+  color: white;
+  transition: 0.3s;
+}
+
+section#header .search:hover {
+  background-color: #beb5ba;
+}
+
+section#header .login {
+  flex-grow: 1;
+  padding: 25.5px;
+  background-color: #e94e38;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+section#header .login .fa-user {
+  font-size: 15px;
+  color: white;
+  padding-right: 10px;
+}
+
+section#header .login:hover {
+  background-color: #d62f18;
+}
+
+section#search {
+  width: 100%;
+  background: url(../img/bg-top.png) no-repeat center top/cover;
+  text-align: center;
+}
+
+section#search h2 {
+  padding: 50px 0 30px 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  color: white;
+}
+
+section#search form {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+
+section#search form select {
+  width: 45%;
+  margin-bottom: 30px;
+  background-color: rgba(204, 204, 204, 0.2);
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+section#search form select option {
+  background-color: rgba(204, 204, 204, 0.2);
+  color: #000;
+  font-weight: 300;
+}
+
+section#search form select:active, section#search form select:focus {
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+section#search form input[type="text"] {
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: rgba(204, 204, 204, 0.2);
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  outline: none;
+}
+
+section#search form input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+section#search form input[type="submit"] {
+  margin: 0 auto;
+  padding: 5px 30px;
+  background-color: #e94e38;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section#search form input[type="submit"]:hover {
+  background-color: #e63a21;
+}
+
+section#content {
+  width: 100%;
+}
+
+section#content > .filters {
+  max-width: 100%;
+  background-color: white;
+}
+
+section#content > .filters > .wrap {
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#content > .filters > .wrap > .recommended {
+  overflow: hidden;
+}
+
+section#content > .filters > .wrap > .recommended > li {
+  padding-right: 20px;
+}
+
+section#content > .filters > .wrap > .recommended > li > a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #96a6a7;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+section#content > .filters > .wrap > .recommended > li > a:hover {
+  color: #e94e38;
+}
+
+section#content > .filters > .wrap > .recommended > li:last-child {
+  padding-right: 0;
+}
+
+section#content > .filters > .wrap > form > select {
+  margin-right: 20px;
+  padding: 11px 25px;
+  border: 1px solid #96a6a7;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #e94e38;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+section#content > .filters > .wrap > form > button {
+  padding: 11px 15px;
+  border: 1px solid #1baf5d;
+  border-radius: 30px;
+  background-color: #1baf5d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section#content > .filters > .wrap > form > button > .fa-map-marker-alt {
+  padding-left: 15px;
+}
+
+section#content > .filters > .wrap > form > button:hover {
+  background-color: #189951;
+}
+
+section#content > .filters > .wrap > .categories {
+  align-items: center;
+}
+
+section#content > .filters > .wrap > .categories > li {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+section#content > .filters > .wrap > .categories > li > a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  transition: 0.2s;
+}
+
+section#content > .filters > .wrap > .categories > li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+section#content > .filters > .wrap > .categories > li:nth-child(2):hover > a {
+  background-color: #1baf5d;
+}
+
+section#content > .filters > .wrap > .categories > li:nth-child(3):hover > a {
+  background-color: red;
+}
+
+section#content > .filters > .wrap > .categories > li:nth-child(4):hover > a {
+  background-color: blue;
+}
+
+section#content > .filters > .wrap > .categories > li:nth-child(5):hover > a {
+  background-color: #f19e1f;
+}
+
+section#content > .filters > .wrap > .categories > li:nth-child(6):hover > a {
+  background-color: #88499c;
+}
+
+section#content > .wrap > .posts {
+  width: 100%;
+  padding: 50px 0;
+  justify-content: space-around;
+}
+
+section#content > .wrap > .posts > .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  flex-basis: 210px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  background: white;
+  text-align: center;
+}
+
+section#content > .wrap > .posts > .post > .hover {
+  width: 100%;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+section#content > .wrap > .posts > .post > .hover > a {
+  width: 100%;
+  display: inline-block;
+}
+
+section#content > .wrap > .posts > .post > .hover > a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 7px);
+}
+
+section#content > .wrap > .posts > .post > .hover > .more {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+section#content > .wrap > .posts > .post > .hover > .more > .show {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border: solid 2px white;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+section#content > .wrap > .posts > .post > .hover > .more > .show > .fa-search {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+section#content > .wrap > .posts > .post > .hover > .more .fa-comments {
+  padding-left: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+section#content > .wrap > .posts > .post > h3 {
+  padding-bottom: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #838d9a;
+}
+
+section#content > .wrap > .posts > .post > .rating > h4 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section#content > .wrap > .posts > .post > .hover:hover > a > span {
+  display: none;
+  transition: 0.2s;
+}
+
+section#content > .wrap > .posts > .post > .hover:hover > .more {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+section#content > .wrap > .posts > .big-post {
+  flex-basis: 445px;
+  background: white;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+section#content > .wrap > .posts > .big-post > .big-hover {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+section#content > .wrap > .posts > .big-post > .big-hover > a {
+  display: inline-block;
+}
+
+section#content > .wrap > .posts > .big-post > .comment {
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section#content > .wrap > .posts > .big-post > .comment > .lucy {
+  align-self: flex-start;
+  margin: 25px 15px 0 0;
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+section#content > .wrap > .posts > .big-post > .comment > .text > img {
+  margin-bottom: 10px;
+}
+
+section#content > .wrap > .posts > .big-post > .comment > .text > p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+section#content > .wrap > .posts > .big-post > .comment > .text > p > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+section#content > .wrap > .posts > .big-post > .comment > .text > h4 {
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section#slider {
+  width: 100%;
+  background: #1baf5d;
+}
+
+section#contacts {
+  width: 100%;
+  background: url(../img/bg-cont.png) no-repeat center top/cover;
+}
+
+section#contacts > .wrap > h2 {
+  padding: 50px 0 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+section#contacts > .wrap > .pair {
+  width: 100%;
+  margin: 0 auto 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+section#contacts > .wrap > .pair > form {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section#contacts > .wrap > .pair > form > input[type="email"] {
+  width: 100%;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+section#contacts > .wrap > .pair > form > input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+section#contacts > .wrap > .pair > form > button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 15px;
+  background: #e94e38;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+section#contacts > .wrap > .pair > form > button:hover {
+  background: #e63a21;
+}
+
+section#contacts > .wrap .pair2 {
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+section#contacts > .wrap .pair2 > ul {
+  flex-basis: 200px;
+}
+
+section#contacts > .wrap .pair2 > ul > .first {
+  width: 100%;
+  padding-bottom: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+section#contacts > .wrap .pair2 > .social {
+  flex-basis: 200px;
+  text-align: center;
+}
+
+section#contacts > .wrap .pair2 > .social > .follow {
+  padding-bottom: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}

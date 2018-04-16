@@ -1,0 +1,168 @@
+$w: 980px;
+$col: #96a6a7;
+$mon: 'Montserrat', sans-serif;
+$mon_al: 'Montserrat Alternates', sans-serif;
+$cw: white;
+$g: #1baf5d;
+$y: #f19e1f;
+$p: #88499c;
+
+body {
+	background: #f3f1f2;
+	color: $col;
+	font-family: $mon;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+a {
+	font-size: 14px;
+	font-family: $mon;
+	text-decoration: none;
+	color: $col;
+}
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrap {
+	max-width: $w;
+	margin: 0 auto;
+}
+
+.price {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 0 15px;
+	background-color: #1baf5d;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 500;
+	color: $cw;
+}
+
+.icon {
+	position: absolute;
+	left: calc(50% - 30.5px);
+	bottom: -25px;
+}
+
+.border {
+	width: 100%;
+}
+
+.green {
+	&>.hover>a {
+		&>.border {
+			border-bottom: solid 3px $g;
+		}
+	}
+
+	&>.hover>a::before {
+		content: '';
+		background: rgba(27, 175, 93, 0.7);
+		border-radius: 3px;
+		transition: 0.3s;
+		opacity: 0;
+	}
+
+	&>.rating>h4 {
+		color: $g;
+	}
+
+	&>.big-hover>a>.border {
+		border-bottom: solid 3px $g;
+	}
+}
+
+
+.yellow {
+	&>.hover>a {
+		&>.border {
+			border-bottom: solid 3px $y;
+		}
+	}
+
+	&>.hover>a::before {
+		content: '';
+		background: rgba(241, 158, 31,0.7);
+		border-radius: 3px;
+		transition: 0.3s;
+		opacity: 0;
+	}
+
+	&>.rating>h4 {
+		color: $y;
+	}
+
+	&>.big-hover>a>.border {
+		border-bottom: solid 3px $y;
+	}
+}
+
+.purple {
+	&>.hover>a {
+		&>.border {
+			border-bottom: solid 3px $p;
+		}
+	}
+
+	&>.hover>a::before {
+		content: '';
+		background: rgba(136, 73, 156, 0.7);
+		border-radius: 3px;
+		transition: 0.3s;
+		opacity: 0;
+	}
+
+	&>.rating>h4 {
+		color: $p;
+	}
+
+	&>.big-hover>a>.border {
+		border-bottom: solid 3px $p;
+	}
+}
+
+.hover:hover {
+	&>a::before {
+		opacity: 1;
+		transition: 0.3s;
+	}
+}
+
+.b-icon {
+	z-index: 3;
+	position: absolute;
+	left: 35px;
+	bottom: -25px;
+}
+
+.center {
+	width: 100%;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	box-shadow: inset 0 -30px 30px -15px black; 
+
+	&>h2 {
+		padding-right: 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: $cw;
+		text-transform: uppercase;
+	}
+
+	&>span {
+		font-size: 12px;
+		font-weight: 500;
+		color: $cw;
+	}
+}

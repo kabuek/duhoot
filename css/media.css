@@ -1,0 +1,113 @@
+@media only screen and (max-width : 1140px) {
+	section#header .navigation {
+		order: 1;
+		margin: 15px auto;
+	}
+
+	section#header .search, section#header .login, section#header .logo {
+		order: -1;
+	}
+
+	section#header .logo {
+		margin-right: 40%;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	section#header > .navigation li a {
+		font-size: 16px;
+	}
+
+	section#content > .filters .wrap {
+		justify-content: space-around;
+	}
+
+	section#content > .filters > .wrap > .categories {
+		margin-top: 10px;
+	}
+
+	section#header .logo {
+		margin-right: 30%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	section#header .logo {
+		margin-right: 15%;
+	}
+
+	section#header > .navigation li a {
+		font-size: 14px;
+	}
+
+	section#contacts > .wrap .pair2 > ul {
+		flex-basis: 250px;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	section#header .logo {
+		margin-right: 10%;
+		margin-left: 5%;
+	}
+
+	section#header .navigation {
+		justify-content: space-around;
+	}
+
+	section#header > .navigation li {
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	section#search h2 {
+		font-size: 25px;
+	}
+
+	section#search form select {
+		width: 100%;
+	}
+
+	section#content > .wrap > .posts {
+		justify-content: space-around;
+	}
+
+	section#content > .wrap > .posts > .post {
+		margin: 0 5px 20px 5px;
+	}
+
+	section#contacts > .wrap > .pair > form {
+		width: 80%;
+	}
+
+	section#contacts > .wrap .pair2 > ul {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	section#header .logo {
+		width: 100%;
+		margin: 5% 0 5% 5%;
+	}
+
+	section#content > .wrap > .posts > .big-post > .big-hover > a > .center {
+		width: auto;
+		left: 100px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	section#content > .wrap > .posts > .big-post > .big-hover > a > .center h2 {
+		font-size: 14px;
+	}
+
+	section#contacts > .wrap > h2 {
+		font-size: 20px;
+	}
+
+	section#contacts > .wrap > .pair > form {
+		width: 90%;
+	}
+}
